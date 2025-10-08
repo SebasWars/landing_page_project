@@ -1,7 +1,11 @@
 # landing_page_project
 # **DEADLINE: VIERNES 00:00**
 
-**Proyecto** inspiración: A definir.
+**Proyecto**
+Proyecto desarrollado con HTML, BOOTSTRAP, (JAVASCRIPT).
+inspiración: PAYROT.
+URL: https://www.behance.net/gallery/225690371/PAYROT-Website-UIUX-design-Landing-page-ui-ux?tracking_source=search_projects|landing+page&l=3
+
 
 Division de responsabilidades:
 
