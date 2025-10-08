@@ -1,4 +1,4 @@
-# landing_page_proyect
+# landing_page_project
 # **DEADLINE: VIERNES 00:00**
 
 **Proyecto** inspiración: A definir.
