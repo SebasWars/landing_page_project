@@ -4,8 +4,8 @@
 **Proyecto** inspiración: A definir.
 
 Division de responsabilidades:
-Raul:
-Gustavo:
-Sebas:
-Ceci:
+Raul: 
+Gustavo: Carrusel
+Sebas: Footer
+Ceci: Navbar header
 Lorena:
