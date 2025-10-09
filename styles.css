@@ -285,7 +285,7 @@ footer {
   }
 
   .qr-code {
-    top: -8vh;
+    top: -6vh;
     justify-content: center;
     & h1 {
       margin: 0;
@@ -324,9 +324,6 @@ footer {
       font-size: 1rem;
     }
   }
-    .qr-code {
-    top: -5vh;
-    }
 }
  .fondo-globo {
     background-image: url(./pictures/globo-fondo-azul.png);
