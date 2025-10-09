@@ -1,168 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PAYROT Landing Page</title>
+ <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Encode+Sans:wght@100..900&family=Mitr:wght@200;300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Sharada&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css" />
-<style>
-.container {
-  max-width: 900px;
-  min-width: 250px;
-}
-
-.carousel-vertical .carousel-inner {
-  margin: 5%;
-  border-radius: 12px;
-
-}
-
-.carousel-vertical .carousel-item {
-  transition: transform 0.8s ease-in-out;
-}
-
-.carousel-vertical .carousel-item-next.carousel-item-start,
-.carousel-vertical .carousel-item-prev.carousel-item-end {
-  transform: translateY(0);
-}
-
-.carousel-vertical .active.carousel-item-start,
-.carousel-vertical .carousel-item-prev {
-  transform: translateY(-100%);
-}
-
-.carousel-vertical .active.carousel-item-end,
-.carousel-vertical .carousel-item-next {
-  transform: translateY(100%);
-}
-
-.carousel-vertical .image-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.carousel-vertical .image-box img {
-  max-width: 100%;
-  border-radius: 20px;
-  transition: transform 0.3s ease;
-}
-
-.carousel-vertical .legend-box {
-  background: #f8f9fa;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 20px;
-  padding: 0 1.5rem;
-  height: auto;
-  min-height: 150px;
-}
-
-.carousel-vertical .row.g-0.h-100 {
-  height: 80%;
-}
-
-.carousel-vertical .carousel-inner > .carousel-item {
-  height: 80%;
-}
-
-.carousel-vertical .legend-box h3 {
-  font-weight: 300;
-  margin-bottom: 0.5rem;
-}
-
-.carousel-vertical .legend-box p {
-  margin: 0;
-  color: #555555;
-  font-size: 1.1rem;
-}
-
-.carousel-vertical .image-box img:hover {
-  transform: scale(1.03);
-}
-</style>  
-    
+  <style>
+   
+  </style>
 </head>
 
 <body>
-    <!-- Ceci-->
-
-    <!-- Lorena-->
-        <section class="pt-4">
-            <div class="container">
-                <div class="col-lg-6"> <!-- parte izquierda  --> 
-                <div class="gb-white border rounded-5 shadow-sm px-4 py-3 ">
-                    <div class="text-end">
-                    <small class="text-uppercase text-muted"> Total transfer</small>
-                    <div class="h4 m-0 fw-bold">90M+</div>
-                    <a href="#" class="small link-secondary text-decoration-underline">View Stats -.-</a>
-                    </div>
-                </div>
-                </div>
 
 
+  <!-- Ceci-->
 
-             
+
+  <nav class="navbar navbar-expand-lg p-4 sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./pictures/earth.png" alt="" width="25" class="me-2"> PAYROT
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample"
+        aria-controls="navbarsExample" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#hero">Freelancer</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lore">Business</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Marketplace</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer">Fees</a></li>
+        </ul>
+        <button class="btn btn-primary rounded-pill">Contact →</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero-section">
+
+       <div class="col-12 col-md-4 text-center this-min-height"></div>
+
+  <div style="margin-top: 100px;" class="container col-12">
+  <div class="row d-flex align-items-center justify-content-center w-100">
+
+    <!-- Globe Card -->
+    <div class="col-6 col-md-4 d-flex justify-content-center justify-content-md-start mb-4 mb-md-0">
+      <div class="globe-card">
+        <img src="./pictures/earth1.png" alt="Globe">
+        <p class="mt-5 text-dark">
+          Send And Receive Money Worldwide<br>
+          <strong>Fast, Secure, Hassle-Free</strong>
+        </p>
+      </div>
+    </div>
+
+    <div class="d-none d-md-block col-md-4 text-center"></div>
+
+    <!-- Credit Card -->
+    <div class="col-6 col-md-4 d-flex justify-content-center justify-content-md-center mt-4 mt-md-0">
+      <img src="./pictures/sapphireFOC_CategoryHeader.png" class="img-fluid" alt="Card">
+    </div>
+
+  </div>
+</div>
+
+
+
+    <!-- Bottom row fixed to bottom -->
+    <div class="container-fluid bottom-row">
+      <div class="row align-items-end text-center text-md-start">
+        <!-- Left -->
+        <div class="col-md-4 d-flex justify-content-md-start justify-content-center p-0">
+          <div style="background-color: white;" class="bottom-box bottom-left w-100">
+            <p class="mb-2 fs-4">🌐 💬</p>
+            <p>Payrot empowers users to send and receive payments globally.</p>
+            <a href="#" class="text-primary fw-semibold text-decoration-none">OUR SERVICES</a>
+          </div>
+        </div>
+
+        <!-- Center -->
+        <div class="col-md-4 text-center hero-text py-4">
+          <button class="btn btn-primary btn-rounded mb-3">Open Account →</button>
+          <h1>FAST SEND,<br>FAST RECEIVE</h1>
+        </div>
+
+        <!-- Right -->
+        <div class="col-md-4 d-flex justify-content-md-end justify-content-center p-0">
+          <div style="background-color: white;" class="bottom-box bottom-right w-100">
+            <p><small class="text-muted">TOTAL TRANSFERS</small></p>
+            <p class="stats mb-1">90M+</p>
+            <p class="text-muted mb-2">Payments Processed With Payrot</p>
+            <a href="#" class="text-primary fw-semibold text-decoration-none">VIEW STATS →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Lorena-->
+
+
+  <section id="lore" class="py-3">
+    <div class="container">
+      <div class="row align-items-center ">
+        <div class="col-12 col-md-4"> <!-- B1  -->
+          <p class="text-uppercase small mb-2"> Payrot empowers user ....</p>
+          <h1 class="display-5 fw-bold lh-1 mb-3"> Hire and Pay Globally <br>with Payrot</h1>
+          <p class="text-secondary">
+            Payrot Workforce helps you onboard and pay freelancers across <span class="fw-semibold"> 150+ Countries
+            </span> Quickly, securely and without borders.
+          </p>
+          <a href="#" class="link-pimary fw-semibold text-decoration-underline">Explore Explore workforce tools</a>
+
+        </div>
+        <div class="col-12 col-md-4"></div>
+
+
+
+
+        <div class=" col-12 col-md-4"> <!-- B2  -->
+          <div class="card border-0  rounded-4 overflow-hidden position-relative">
+            <div class="ratio ratio-4x3">
+              <img src="./pictures/analitic.png" class="w-100 h-100 object-fit-cover"
+                alt="Professional on blue background">
             </div>
-        </section>
 
 
-        <section class="py-5">
-            <div class="container">
-                <div class="row align-items-center g-4">
-                <div class="col-lg-6"> <!-- B1  --> 
-                    <p class="text-uppercase small mb-2"> Payrot empowers user ....</p>
-                    <h1 class="display-5 fw-bold lh-1 mb-3"> Hire and Pay Globally <br>with Payrot</h1>
-                    <p class="text-secondary">
-                        Payrot Workforce helps you onboard and pay freelancers across <span class="fw-semibold"> 150+ Countries </span> Quickly, securely and without borders.
-                    </p>
-                    <a href="#" class="link-pimary fw-semibold text-decoration-underline">Explore Explore workforce tools</a>
+            <!-- boton derecho -->
 
-                </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
 
 
 
-
-
-                <div class="col-lg-6"> <!-- B2  --> 
-                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden position-relative">
-                    <div class="ratio ratio-4x3">
-                        <img src="./assets/img/hero-blue.png" class="w-100 h-100 object-fit-cover" alt="Professional on blue background">
-                    </div>
-                    
-
-                    <!-- boton derecho -->
-                    <div class=" position-absolute top-0 end-0 p-3">
-                        <span class="badge rounded-pill text-bg-light border shadow-sm align-items-center px-3 py-2">
-                            <span class="me-2 ">+</span> Payment Request <span class="ms-2"> Sent</span>
-                        </span>
-                    </div>
-
-                    <!-- boton izquierdo -->      
-                    <div class="position-absolute bottom-0 start-0 p-3">
-                        <span class="badge rounded-pill text-bg-light border shadow-sm d-inline-flex align-items-center px-3 py-2">
-                            <span class="me-2">+</span> 1560$ <span class="ms-2">Paid</span>
-                        </span>
-                    </div>
-                    </div>
-                </div>
-
-
-                </div>
-            </div>
-        </section>
-
-
-      <!-- Lorena-->
-
-      <!-- Raul-->
-
-  
-      <div class="fondo-globo py-5 text-center rounded-5 text-white d-flex flex-column justify-content-end align-items-center">
+  <!-- Raul-->
+<div class="fondo-globo py-5 text-center rounded-5 text-white d-flex flex-column justify-content-end align-items-center">
        <div class="m-5"> 
         
         <h2 class="display-5 fw-bold mb-3">
@@ -176,6 +172,8 @@
         </p>
        </div>
         <button type="button" class="btn btn-outline-primary p-3 rounded-4 m-5">Explore More</button>
+        
+
     </div>
 
 
@@ -188,7 +186,7 @@
 
         <div class="d-md-flex justify-content-center p-md-5">
             <div class="col-md-6">
-                <img src="img/img-chico.png" class="w-100 h-100 rounded-5" alt="chico">
+                <img src="./pictures/img-chico.png" class="w-100 h-100 rounded-5" alt="chico">
             </div>
             <div class="col-md-6 p-4 d-flex flex-column justify-content-center">
                 <h4 class="p-2">
@@ -221,7 +219,7 @@
                 <p class="p-2"><a class="link-opacity-75-hover" href="#">START MANAGING PAYMENTS -></a></p>
             </div>
             <div class="col-md-6">
-                <img src="img/img-grupo.png" class="w-100 h-100 rounded-5" alt="grupo">
+                <img src="./pictures/img-grupo.png" class="w-100 h-100 rounded-5" alt="grupo">
             </div>
         </div>
     </div>
@@ -231,7 +229,7 @@
 
         <div class="d-md-flex justify-content-center p-md-5">
             <div class="col-md-6">
-                <img src="img/img-tec.png" class="w-100 h-100 rounded-5" alt="tec">
+                <img src="./pictures/img-tec.png" class="w-100 h-100 rounded-5" alt="tec">
             </div>
             <div class="col-md-6 d-flex flex-column justify-content-center p-4">
                 <h4 class="p-2">
@@ -247,61 +245,97 @@
             </div>
         </div>
     </div>
+  <!-- Gustavo-->
+  <div class="container-fluid mt-5 rounded">
+    <div class="row justify-content-center col-12 ">
+      <div class=" col-md-8">
+        <div id="singleVerticalCarousel" class="carousel slide carousel-vertical" data-bs-ride="carousel"
+          data-bs-interval="4000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row g-0 h-100">
+                <div class="col-6 image-box object-fit-cover border rounded">
+                  <img src="./pictures/customer support.jpg" class="rounded" alt="Customer Support">
+                </div>
+                <div class="col-6 legend-box rounded">
+                  <h3>Customer Support 📞</h3>
+                  <p class="lead">Got a question? Our support team is always ready to provide fast, thoughtful
+                    solutions.</p>
+                </div>
+              </div>
+            </div>
 
-    <!-- Gustavo-->
-<div class=" mt-5 rounded">
-  <div class="row  container-fluid justify-content-center">
-            <div class="col-md-8">
-            <div id="singleVerticalCarousel" class="carousel slide carousel-vertical" data-bs-ride="carousel" data-bs-interval="4000">
-                    <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row g-0 h-100">
-                            <div class="col-6 image-box object-fit-cover border rounded">
-                                <img src="./pictures/customer support.jpg" class="rounded" alt="Customer Support">
-                            </div>
-                            <div class="col-6 legend-box rounded">
-                                <h3>Customer Support 📞</h3>
-                                <p class="lead">Got a question? Our support team is always ready to provide fast, thoughtful solutions.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <div class="row g-0 h-100">
-                            <div class="col-6 image-box object-fit-cover border rounded">
-                                <img src="./pictures/budget tracker.jpg" alt="Budget Tracker">
-                            </div>
-                            <div class="col-6 legend-box rounded">
-                                <h3>Budget Tracker 📊</h3>
-                                <p class="lead">Keep track of your spending and savings with our easy-to-use budget tracker.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <div class="row g-0 h-100">
-                            <div class="col-6 image-box object-fit-cover border rounded">
-                                <img src="./pictures/crypto wallet.jpg" alt="Crypto Wallet">
-                            </div>
-                            <div class="col-6 legend-box rounded">
-                                <h3>Crypto Wallet ₿</h3>
-                                <p class="lead">Securely manage your digital assets with our integrated crypto wallet.</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="carousel-item">
+              <div class="row g-0 h-100">
+                <div class="col-6 image-box object-fit-cover border rounded">
+                  <img src="./pictures/budget tracker.jpg" alt="Budget Tracker">
+                </div>
+                <div class="col-6 legend-box rounded">
+                  <h3>Budget Tracker 📊</h3>
+                  <p class="lead">Keep track of your spending and savings with our easy-to-use budget tracker.</p>
+                </div>
+              </div>
+            </div>
 
-                    <div class="carousel-item">
-                        <div class="row g-0 h-100">
-                            <div class="col-6 image-box object-fit-cover border rounded">
-                                <img src="./pictures/loan application.jpg" alt="Loan Application">
-                            </div>
-                            <div class="col-6 legend-box rounded">
-                                <h3>Loan Application 📄</h3>
-                                <p class="lead">Apply for loans quickly and easily through our streamlined application process.</p>
-                            </div>
-                        </div>
-                    </div>
- <section class="row main-container">
+            <div class="carousel-item">
+              <div class="row g-0 h-100">
+                <div class="col-6 image-box object-fit-cover border rounded">
+                  <img src="./pictures/crypto wallet.jpg" alt="Crypto Wallet">
+                </div>
+                <div class="col-6 legend-box rounded">
+                  <h3>Crypto Wallet ₿</h3>
+                  <p class="lead">Securely manage your digital assets with our integrated crypto wallet.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row g-0 h-100">
+                <div class="col-6 image-box object-fit-cover border rounded">
+                  <img src="./pictures/loan application.jpg" alt="Loan Application">
+                </div>
+                <div class="col-6 legend-box rounded">
+                  <h3>Loan Application 📄</h3>
+                  <p class="lead">Apply for loans quickly and easily through our streamlined application process.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row g-0 h-100">
+                <div class="col-6 image-box object-fit-cover border rounded">
+                  <img src="./pictures/payrot.jpg" alt="Payroll">
+                </div>
+                <div class="col-6 legend-box rounded">
+                  <h3>Payrot 💸</h3>
+                  <p class="lead">Manage payroll for your team with automated payments and tax handling.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row g-0 h-100">
+                <div class="col-6 image-box object-fit-cover border rounded">
+                  <img src="./pictures/saving goals.jpg" alt="Saving Goals">
+                </div>
+                <div class="col-6 legend-box rounded">
+                  <h3>Saving Goals 🎯</h3>
+                  <p class="lead">Set and track your financial goals to save for the future effectively.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Seba-->
+
+
+
+
+   <section id="footer" class="row main-container">
         <div class="col-12 head-section ">
             <h1 class="features-title ">FEATURES</h1>
         </div>
@@ -350,7 +384,7 @@
             <button class="store">
                             <i class="fa-solid fa-apple-whole"></i>
               Applestore
-            </buttton>
+            </button>
           </div>
         </div>
         <div class="col-12 rights-and-design">
@@ -359,7 +393,7 @@
             <h1 class="last-title">PAYROT</h1>
         </div>
     </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
