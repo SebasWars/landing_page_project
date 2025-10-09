@@ -1,0 +1,31 @@
+.fondo-globo {
+    background-image: url(img/globo-fondo-azul.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 60rem;
+}
+
+p {
+    font-family: 'mitr';
+    font-weight: 300;
+    font-size: 18px;
+    color: rgb(101, 156, 156);
+}
+
+h3 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    color: rgb(35, 43, 90);
+}
+
+h4{
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 424;
+  font-style: normal;
+  color:rgb(35, 43, 90);
+  font-size: 20px;
+}
