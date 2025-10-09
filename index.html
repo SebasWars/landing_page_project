@@ -7,9 +7,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
 
   <style>
-    .navbar {
+ .navbar {
       background: linear-gradient(45deg, white, #B6D9EE);
     }
+
     .navbar .nav-link {
       color: rgb(71, 71, 160);
       font-weight: 500;
@@ -17,10 +18,12 @@
       border-bottom: 2px solid transparent;
       padding-bottom: 5px;
     }
+
     .navbar .nav-link:hover {
       color: rgb(30, 144, 255);
       border-bottom: 2px solid rgb(71, 71, 160);
     }
+
     .navbar .nav-link.active {
       color: #ff6600;
       border-bottom: 2px solid #ff6600;
@@ -29,8 +32,8 @@
 
     .hero-section {
       position: relative;
-      background: url('parrot2.png') center/cover no-repeat;
-      min-height: 700px;
+      background: url('./pictures/parrot2.png') center/cover no-repeat;
+      min-height: 800px;
       border-radius: 20px;
       padding: 3rem 2rem;
       color: #fff;
@@ -56,6 +59,7 @@
       padding-top: 70px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     }
+
     .globe-card img {
       max-height: 120px;
       position: absolute;
@@ -113,9 +117,11 @@
 
     @media (max-width: 992px) {
       .hero-section {
-        min-height: auto;
+        min-height: 1000px;
         padding: 2rem 1rem 0;
       }
+    .this-min-height{
+      min-height: 700px;}
 
       .globe-card {
         width: 180px;
@@ -142,16 +148,16 @@
       .hero-text h1 {
         font-size: 1.8rem;
       }
-    }
-
-    @media (max-width: 576px) {
-      .hero-text h1 {
+         .hero-text h1 {
         font-size: 1.6rem;
       }
+
       .stats {
         font-size: 2rem;
       }
     }
+
+
   </style>
 </head>
 
@@ -160,11 +166,11 @@
 
    <!-- Ceci-->
 
-   
+
   <nav class="navbar navbar-expand-lg p-4 sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="./earth.png" alt="" width="25" class="me-2"> PAYROT
+        <img src="./pictures/earth.png" alt="" width="25" class="me-2"> PAYROT
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample"
@@ -174,10 +180,10 @@
 
       <div class="collapse navbar-collapse" id="navbarsExample">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#">Freelancer</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Business</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hero">Freelancer</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lore">Business</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Marketplace</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Fees</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer">Fees</a></li>
         </ul>
         <button class="btn btn-primary rounded-pill">Contact →</button>
       </div>
@@ -185,36 +191,42 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero-section">
-    <div style="margin-bottom: 200px;" class="container top-row">
-      <div class="row align-items-center w-100">
-        <!-- Globe Card -->
-        <div class="col-md-4 d-flex justify-content-center justify-content-md-start mb-4 mb-md-0">
-          <div class="globe-card">
-            <img src="https://nineplanets.org/wp-content/uploads/2019/09/earth.png" alt="Globe">
-            <p class="mt-5 text-dark">
-              Send And Receive Money Worldwide<br>
-              <strong>Fast, Secure, Hassle-Free</strong>
-            </p>
-          </div>
-        </div>
+  <section id="hero" class="hero-section">
 
-        <div class="col-md-4 text-center"></div>
+       <div class="col-12 col-md-4 text-center this-min-height"></div>
 
-        <!-- Credit Card -->
-        <div class="col-md-4 d-flex justify-content-center justify-content-md-end mt-4 mt-md-0">
-          <img src="https://creditcards.chase.com/content/dam/jpmc-marketplace/site-assets/card-brand-page-images/sapphireFOC_CategoryHeader.png"
-            class="img-fluid   " alt="Card">
-        </div>
+  <div style="margin-top: 100px;" class="container col-12">
+  <div class="row d-flex align-items-center justify-content-center w-100">
+
+    <!-- Globe Card -->
+    <div class="col-6 col-md-4 d-flex justify-content-center justify-content-md-start mb-4 mb-md-0">
+      <div class="globe-card">
+        <img src="./pictures/earth1.png" alt="Globe">
+        <p class="mt-5 text-dark">
+          Send And Receive Money Worldwide<br>
+          <strong>Fast, Secure, Hassle-Free</strong>
+        </p>
       </div>
     </div>
 
+    <div class="d-none d-md-block col-md-4 text-center"></div>
+
+    <!-- Credit Card -->
+    <div class="col-6 col-md-4 d-flex justify-content-center justify-content-md-center mt-4 mt-md-0">
+      <img src="./pictures/sapphireFOC_CategoryHeader.png" class="img-fluid" alt="Card">
+    </div>
+
+  </div>
+</div>
+
+
+
     <!-- Bottom row fixed to bottom -->
     <div class="container-fluid bottom-row">
-      <div style="background-color: white;" class="row align-items-end text-center text-md-start">
+      <div class="row align-items-end text-center text-md-start">
         <!-- Left -->
         <div class="col-md-4 d-flex justify-content-md-start justify-content-center p-0">
-          <div class="bottom-box bottom-left w-100">
+          <div style="background-color: white;" class="bottom-box bottom-left w-100">
             <p class="mb-2 fs-4">🌐 💬</p>
             <p>Payrot empowers users to send and receive payments globally.</p>
             <a href="#" class="text-primary fw-semibold text-decoration-none">OUR SERVICES</a>
@@ -239,8 +251,6 @@
       </div>
     </div>
   </section>
-
-
 
   <!-- Lorena-->
 
