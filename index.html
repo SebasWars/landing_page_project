@@ -19,13 +19,89 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Ceci-->
+<style>
+.container {
+  max-width: 900px;
+  min-width: 250px;
+}
 
-    <!-- Lorena-->
+.carousel-vertical .carousel-inner {
+  margin: 5%;
+  border-radius: 12px;
 
-    <div class="fondo-globo py-5 text-center rounded-5 text-white d-flex flex-column justify-content-end align-items-center">
+}
+
+.carousel-vertical .carousel-item {
+  transition: transform 0.8s ease-in-out;
+}
+
+.carousel-vertical .carousel-item-next.carousel-item-start,
+.carousel-vertical .carousel-item-prev.carousel-item-end {
+  transform: translateY(0);
+}
+
+.carousel-vertical .active.carousel-item-start,
+.carousel-vertical .carousel-item-prev {
+  transform: translateY(-100%);
+}
+
+.carousel-vertical .active.carousel-item-end,
+.carousel-vertical .carousel-item-next {
+  transform: translateY(100%);
+}
+
+.carousel-vertical .image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-vertical .image-box img {
+  max-width: 100%;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-vertical .legend-box {
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 0 1.5rem;
+  height: auto;
+  min-height: 150px;
+}
+
+.carousel-vertical .row.g-0.h-100 {
+  height: 80%;
+}
+
+.carousel-vertical .carousel-inner > .carousel-item {
+  height: 80%;
+}
+
+.carousel-vertical .legend-box h3 {
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.carousel-vertical .legend-box p {
+  margin: 0;
+  color: #555555;
+  font-size: 1.1rem;
+}
+
+.carousel-vertical .image-box img:hover {
+  transform: scale(1.03);
+}
+</style>  
+    
+</head>
+<body>
+  
+  
+      <div class="fondo-globo py-5 text-center rounded-5 text-white d-flex flex-column justify-content-end align-items-center">
        <div class="m-5"> 
         
         <h2 class="display-5 fw-bold mb-3">
@@ -39,8 +115,6 @@
         </p>
        </div>
         <button type="button" class="btn btn-outline-primary p-3 rounded-4 m-5">Explore More</button>
-        
-
     </div>
 
 
@@ -113,8 +187,88 @@
         </div>
     </div>
 
+  
+<div class="container mt-5 rounded">
+  <div class="row justify-content-center">
+            <div class="col-md-8">
+            <div id="singleVerticalCarousel" class="carousel slide carousel-vertical" data-bs-ride="carousel" data-bs-interval="4000">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-0 h-100">
+                            <div class="col-6 image-box object-fit-cover border rounded">
+                                <img src="./pictures/customer support.jpg" class="rounded" alt="Customer Support">
+                            </div>
+                            <div class="col-6 legend-box rounded">
+                                <h3>Customer Support 📞</h3>
+                                <p class="lead">Got a question? Our support team is always ready to provide fast, thoughtful solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="row g-0 h-100">
+                            <div class="col-6 image-box object-fit-cover border rounded">
+                                <img src="./pictures/budget tracker.jpg" alt="Budget Tracker">
+                            </div>
+                            <div class="col-6 legend-box rounded">
+                                <h3>Budget Tracker 📊</h3>
+                                <p class="lead">Keep track of your spending and savings with our easy-to-use budget tracker.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="row g-0 h-100">
+                            <div class="col-6 image-box object-fit-cover border rounded">
+                                <img src="./pictures/crypto wallet.jpg" alt="Crypto Wallet">
+                            </div>
+                            <div class="col-6 legend-box rounded">
+                                <h3>Crypto Wallet ₿</h3>
+                                <p class="lead">Securely manage your digital assets with our integrated crypto wallet.</p>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- Gustavo-->
+                    <div class="carousel-item">
+                        <div class="row g-0 h-100">
+                            <div class="col-6 image-box object-fit-cover border rounded">
+                                <img src="./pictures/loan application.jpg" alt="Loan Application">
+                            </div>
+                            <div class="col-6 legend-box rounded">
+                                <h3>Loan Application 📄</h3>
+                                <p class="lead">Apply for loans quickly and easily through our streamlined application process.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row g-0 h-100">
+                            <div class="col-6 image-box object-fit-cover border rounded">
+                                <img src="./pictures/payrot.jpg" alt="Payroll">
+                            </div>
+                            <div class="col-6 legend-box rounded">
+                                <h3>Payrot 💸</h3>
+                                <p class="lead">Manage payroll for your team with automated payments and tax handling.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row g-0 h-100">
+                            <div class="col-6 image-box object-fit-cover border rounded">
+                                <img src="./pictures/saving goals.jpg" alt="Saving Goals">
+                            </div>
+                            <div class="col-6 legend-box rounded">
+                                <h3>Saving Goals 🎯</h3>
+                                <p class="lead">Set and track your financial goals to save for the future effectively.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+</div>
 
     <!-- Seba-->
     <section class="row main-container">
@@ -175,5 +329,6 @@
             <h1 class="last-title">PAYROT</h1>
         </div>
     </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
