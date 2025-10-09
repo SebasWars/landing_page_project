@@ -324,6 +324,9 @@ footer {
       font-size: 1rem;
     }
   }
+    .qr-code {
+    top: -5vh;
+    }
 }
  .fondo-globo {
     background-image: url(./pictures/globo-fondo-azul.png);
