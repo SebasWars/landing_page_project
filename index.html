@@ -5,15 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PAYROT Landing Page</title>
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
-
-  <style>
-
-   
-  
-
- .navbar {
  <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -380,7 +371,6 @@ footer {
     .hero-section {
       position: relative;
       background: url('./pictures/parrot2.png') center/cover no-repeat;
-      
       min-height: 800px;
       border-radius: 20px;
       padding: 3rem 2rem;
@@ -471,7 +461,6 @@ footer {
     .this-min-height{
       min-height: 750px;}
 
-
       .globe-card {
         width: 180px;
         height: 200px;
@@ -508,6 +497,76 @@ footer {
 
 
 
+    .carousel-vertical .carousel-inner {
+      margin: 5%;
+      border-radius: 12px;
+
+    }
+
+    .carousel-vertical .carousel-item {
+      transition: transform 0.8s ease-in-out;
+    }
+
+    .carousel-vertical .carousel-item-next.carousel-item-start,
+    .carousel-vertical .carousel-item-prev.carousel-item-end {
+      transform: translateY(0);
+    }
+
+    .carousel-vertical .active.carousel-item-start,
+    .carousel-vertical .carousel-item-prev {
+      transform: translateY(-100%);
+    }
+
+    .carousel-vertical .active.carousel-item-end,
+    .carousel-vertical .carousel-item-next {
+      transform: translateY(100%);
+    }
+
+    .carousel-vertical .image-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .carousel-vertical .image-box img {
+      max-width: 100%;
+      border-radius: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .carousel-vertical .legend-box {
+      background: #f8f9fa;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 20px;
+      padding: 0 1.5rem;
+      height: auto;
+      min-height: 150px;
+    }
+
+    .carousel-vertical .row.g-0.h-100 {
+      height: 80%;
+    }
+
+    .carousel-vertical .carousel-inner>.carousel-item {
+      height: 80%;
+    }
+
+    .carousel-vertical .legend-box h3 {
+      font-weight: 300;
+      margin-bottom: 0.5rem;
+    }
+
+    .carousel-vertical .legend-box p {
+      margin: 0;
+      color: #555555;
+      font-size: 1.1rem;
+    }
+
+    .carousel-vertical .image-box img:hover {
+      transform: scale(1.03);
+    }
   </style>
 </head>
 
@@ -515,8 +574,6 @@ footer {
 
 
   <!-- Ceci-->
-
-
 
 
   <nav class="navbar navbar-expand-lg p-4 sticky-top">
@@ -554,7 +611,6 @@ footer {
     <div class="col-6 col-md-4 d-flex justify-content-center justify-content-md-start mb-4 mb-md-0">
       <div class="globe-card">
         <img src="./pictures/earth1.png" alt="Globe">
-       
         <p class="mt-5 text-dark">
           Send And Receive Money Worldwide<br>
           <strong>Fast, Secure, Hassle-Free</strong>
@@ -567,7 +623,6 @@ footer {
     <!-- Credit Card -->
     <div class="col-6 col-md-4 d-flex justify-content-center justify-content-md-center mt-4 mt-md-0">
       <img src="./pictures/sapphireFOC_CategoryHeader.png" class="img-fluid" alt="Card">
-     
     </div>
 
   </div>
@@ -606,14 +661,285 @@ footer {
     </div>
   </section>
 
+
+
   <!-- Lorena-->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <section id="lore" class="py-3">
+    <div class="container">
+      <div class="row align-items-center ">
+        <div class="col-12 col-md-4"> <!-- B1  -->
+          <p class="text-uppercase small mb-2"> Payrot empowers user ....</p>
+          <h1 class="display-5 fw-bold lh-1 mb-3"> Hire and Pay Globally <br>with Payrot</h1>
+          <p class="text-secondary">
+            Payrot Workforce helps you onboard and pay freelancers across <span class="fw-semibold"> 150+ Countries
+            </span> Quickly, securely and without borders.
+          </p>
+          <a href="#" class="link-pimary fw-semibold text-decoration-underline">Explore Explore workforce tools</a>
+
+        </div>
+        <div class="col-12 col-md-4"></div>
 
 
 
 
+        <div class=" col-12 col-md-4"> <!-- B2  -->
+          <div class="card border-0  rounded-4 overflow-hidden position-relative">
+            <div class="ratio ratio-4x3">
+              <img src="./pictures/analitic.png" class="w-100 h-100 object-fit-cover"
+                alt="Professional on blue background">
+            </div>
 
+
+            <!-- boton derecho -->
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Raul-->
+<div class="fondo-globo py-5 text-center rounded-5 text-white d-flex flex-column justify-content-end align-items-center">
+       <div class="m-5"> 
+        
+        <h2 class="display-5 fw-bold mb-3">
+            GROW BEYOND <br>
+            BORDER WITH PAYROT
+        </h2>
+
+        <p class="lead mx-auto mb-3">
+            Whether You´re Paying A Freelancer Or A Full Team Overseas, Payrot <br>
+            Makes It Simples Fast, Secure, And Whit No Card Fees To Worry About
+        </p>
+       </div>
+        <button type="button" class="btn btn-outline-primary p-3 rounded-4 m-5">Explore More</button>
+        
+
+    </div>
+
+
+
+    <div class="container py-5 bg-white mx-auto mb-3">
+        <h3 class="display-5 fw-bold mb-3 text-center">WHO WE SERVE</h2>
+    </div>
+
+    <div class="container g-4">
+
+        <div class="d-md-flex justify-content-center p-md-5">
+            <div class="col-md-6">
+                <img src="./pictures/img-chico.png" class="w-100 h-100 rounded-5" alt="chico">
+            </div>
+            <div class="col-md-6 p-4 d-flex flex-column justify-content-center">
+                <h4 class="p-2">
+                    Freelancers
+                </h4>
+                <p class="p-2">
+                    Say Goodbye To Payment Delays And Complicated <br>
+                    Systems, Whit <strong>Payrot</strong>, You Get A Simple, Fast, And Reliable <br>
+                    Way To Receive Payments From Clients Arround The World <br>
+                    Whit <strong>Zero Card Fees</strong>And Full Control Over Your Funds.
+                </p>
+                <p class="p-2"><a class="link-opacity-75-hover" href="#">GET PAID FASTER -></a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container g-4">
+
+        <div class="d-flex flex-column-reverse flex-md-row justify-content-center p-md-5">
+            <div class="col-md-6 p-4 d-flex flex-column justify-content-center">
+                <h4 class="p-2">
+                    Businesses
+                </h4>
+                <p class="p-2">
+                    Whether You´re A Startup Or An Established Company, <br>
+                    Payrot Empowers You To Manage Cross-Border<br>
+                    <strong>Transactions Effortlessly</strong>. Scale You Operations, Pay<br>
+                    Vendors Globally, And Keep <strong>Your Finances Organized.</strong>
+                </p>
+                <p class="p-2"><a class="link-opacity-75-hover" href="#">START MANAGING PAYMENTS -></a></p>
+            </div>
+            <div class="col-md-6">
+                <img src="./pictures/img-grupo.png" class="w-100 h-100 rounded-5" alt="grupo">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container g-4">
+
+        <div class="d-md-flex justify-content-center p-md-5">
+            <div class="col-md-6">
+                <img src="./pictures/img-tec.png" class="w-100 h-100 rounded-5" alt="tec">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center p-4">
+                <h4 class="p-2">
+                    Marketplaces
+                </h4>
+                <p class="p-2">
+                    From Small Online Shops To Large-Scale Platforms, Payrot <br>
+                    Helps You Automate And Streamline Payouts To Sellers <br>
+                    And Partners <strong>Worldwide</strong>. Increase Trust, And Ensure <br>
+                    Everyone Gets Paid On Time <strong>Whitout Hidden Costs</strong>.
+                </p>
+                <p class="p-2"><a class="link-opacity-75-hover" href="#">STREAMLINE YOUR PAYOUTS -></a></p>
+            </div>
+        </div>
+    </div>
+  <!-- Gustavo-->
+  <div class="container-fluid mt-5 rounded">
+    <div class="row justify-content-center col-12 ">
+      <div class=" col-md-8">
+        <div id="singleVerticalCarousel" class="carousel slide carousel-vertical" data-bs-ride="carousel"
+          data-bs-interval="4000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row g-0 h-100">
+                <div class="col-6 image-box object-fit-cover border rounded">
+                  <img src="./pictures/customer support.jpg" class="rounded" alt="Customer Support">
+                </div>
+                <div class="col-6 legend-box rounded">
+                  <h3>Customer Support 📞</h3>
+                  <p class="lead">Got a question? Our support team is always ready to provide fast, thoughtful
+                    solutions.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row g-0 h-100">
+                <div class="col-6 image-box object-fit-cover border rounded">
+                  <img src="./pictures/budget tracker.jpg" alt="Budget Tracker">
+                </div>
+                <div class="col-6 legend-box rounded">
+                  <h3>Budget Tracker 📊</h3>
+                  <p class="lead">Keep track of your spending and savings with our easy-to-use budget tracker.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row g-0 h-100">
+                <div class="col-6 image-box object-fit-cover border rounded">
+                  <img src="./pictures/crypto wallet.jpg" alt="Crypto Wallet">
+                </div>
+                <div class="col-6 legend-box rounded">
+                  <h3>Crypto Wallet ₿</h3>
+                  <p class="lead">Securely manage your digital assets with our integrated crypto wallet.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row g-0 h-100">
+                <div class="col-6 image-box object-fit-cover border rounded">
+                  <img src="./pictures/loan application.jpg" alt="Loan Application">
+                </div>
+                <div class="col-6 legend-box rounded">
+                  <h3>Loan Application 📄</h3>
+                  <p class="lead">Apply for loans quickly and easily through our streamlined application process.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row g-0 h-100">
+                <div class="col-6 image-box object-fit-cover border rounded">
+                  <img src="./pictures/payrot.jpg" alt="Payroll">
+                </div>
+                <div class="col-6 legend-box rounded">
+                  <h3>Payrot 💸</h3>
+                  <p class="lead">Manage payroll for your team with automated payments and tax handling.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row g-0 h-100">
+                <div class="col-6 image-box object-fit-cover border rounded">
+                  <img src="./pictures/saving goals.jpg" alt="Saving Goals">
+                </div>
+                <div class="col-6 legend-box rounded">
+                  <h3>Saving Goals 🎯</h3>
+                  <p class="lead">Set and track your financial goals to save for the future effectively.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Seba-->
+
+
+
+
+   <section id="footer" class="row main-container">
+        <div class="col-12 head-section ">
+            <h1 class="features-title ">FEATURES</h1>
+        </div>
+        <div class=" col-12 feature ">
+            <button class="number-button">001</button>
+            <div class="information">
+            <h1 class="features-title">GLOBAL ACCOUNT ACCESS</h1>
+            <p class="feature-content">Recive payments in USD, EUR, GPB and more with local bank details.</p>
+            </div>
+            <button class="go-to-btn"><i class="fa-solid fa-arrow-up arrow"></i></button>
+        </div>
+        <div class=" col-12 feature">
+            <button class="number-button">002</button>
+            <div class="information">
+            <h1 class="features-title">FOREING EXCHANGE RATES</h1>
+            <p class="feature-content">Benefic from real-time rates with minimal conversion fees.</p>
+            </div>
+            <button class="go-to-btn"><i class="fa-solid fa-arrow-up arrow"></i></button>
+        </div>
+        <div class=" col-12 feature">
+            <button class="number-button">003</button>
+            <div class="information">
+            <h1 class="features-title">SMART FAST PAY TOOLS</h1>
+            <p class="feature-content">Easyly connect with platforms like Paypal, Bizum and Amazon.</p>
+            </div>
+            <button class="go-to-btn"><i class="fa-solid fa-arrow-up arrow"></i></button>
+        </div>
+        <div class=" col-12 feature last-one">
+            <button class="number-button">004</button>
+            <div class="information">
+            <h1 class="features-title">SUPER EASY INTERFACE</h1>
+            <p class="feature-content">Transfer founds to your local bank or use our Payrot card for direct access.</p>
+            </div>
+            <button class="go-to-btn"><i class="fa-solid fa-arrow-up arrow"></i></button>
+        </div>
+    </section>
+    <footer>
+        <div class="qr-code">
+          <h1>GET THE APP</h1>
+          <i class="fa-solid fa-qrcode"></i>
+          <div class="apps">
+            <button class="store">
+              <i class="fa-solid fa-play"></i>
+              Playstore
+            </button>
+            <button class="store">
+                            <i class="fa-solid fa-apple-whole"></i>
+              Applestore
+            </button>
+          </div>
+        </div>
+        <div class="col-12 rights-and-design">
+            <p>2025<span><i class="fa-solid fa-copyright"></i></span>All Rigths reserved to our team.</p>
+            <p>Design by Ceci,Lorena,Raul,Gustavo, Sebas</p>
+            <h1 class="last-title">PAYROT</h1>
+        </div>
+    </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
