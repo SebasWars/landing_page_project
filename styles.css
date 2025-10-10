@@ -1,34 +1,331 @@
-<!DOCTYPE html>
-<html lang="en">
+* {
+  padding: 0;
+  margin: 0;
+}
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PAYROT Landing Page</title>
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+.fondo-globo {
+    background-image: url(img/globo-fondo-azul.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 60rem;
+}
 
+p {
+    font-family: 'mitr';
+    font-weight: 300;
+    font-size: 18px;
+    color: rgb(101, 156, 156);
+}
 
-  <style>
+h3 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    color: rgb(35, 43, 90);
+}
 
-   
-  
+h4{
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 424;
+  font-style: normal;
+  color:rgb(35, 43, 90);
+  font-size: 20px;
+}
 
- .navbar {
- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Encode+Sans:wght@100..900&family=Mitr:wght@200;300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Sharada&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-  <style>
-    .fondo-globo {
+.main-container {
+  margin: 1rem 0 0 0;
+}
+
+.head-section {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  background: linear-gradient(rgb(129, 147, 173), rgb(255, 255, 255));
+  color: transparent;
+  background-clip: text;
+  border-bottom: 2px solid rgba(178, 178, 178, 0.579);
+
+  & .features-title {
+    font-size: 8rem;
+    letter-spacing: 1.5rem;
+  }
+}
+
+.feature {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  border-bottom: 2px solid rgba(178, 178, 178, 0.579);
+  justify-content: space-evenly;
+  align-items: center;
+
+  & .number-button {
+    padding: 2px 20px;
+    border: 2px solid #266aa6;
+    background-color: white;
+    border-radius: 50px;
+    outline: none;
+    font-size: 1.1rem;
+    transition: 0.1s ease-in-out;
+  }
+
+  & .number-button:hover {
+    background-color: #b8ccd9;
+    color: #10324f;
+  }
+
+  .information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+
+    & .feature-title {
+      width: 60%;
+      color: #10324f;
+      font-weight: 700;
+    }
+
+    & .feature-content {
+      width: 50%;
+      color: #567687;
+      font-weight: 600;
+    }
+  }
+
+  .go-to-btn {
+    padding: 1.8rem;
+    border: none;
+    outline: none;
+    background-color: #b8ccd9;
+    border-radius: 100%;
+
+    & .arrow {
+      transform: rotate(45deg);
+      color: #10324f;
+      font-size: 2rem;
+    }
+  }
+
+  .go-to-btn:active {
+    background-color: #10324f;
+    & .arrow {
+      color: #b8ccd9;
+    }
+  }
+}
+
+.last-one {
+  padding-bottom: 15%;
+  border-bottom: none;
+}
+
+footer {
+  background-color: #10324f;
+  width: 100%;
+  color: #b8ccd9;
+  position: relative;
+}
+
+.qr-code {
+  position: absolute;
+  left: 50%;
+  bottom: 25vh;
+  transform: translateX(-50%);
+  width: clamp(220px, 35vw, 400px);
+  height: clamp(200px, 30vw, 400px);
+  border-radius: 1rem;
+  background-color: #b8ccd9;
+  color: #10324f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .fa-qrcode {
+    font-size: 10rem;
+  }
+}
+
+  .apps {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+    & .store {
+      width: auto;
+      height: auto;
+      padding: 10px 20px;
+      border-radius: 0.5rem;
+      background-color: #567687;
+      border: none;
+      color: #10324f;
+      transition: 0.2s ease-in-out;
+       z-index: 999999;
+      cursor: pointer;
+    }
+  }
+
+.store:hover {
+  background-color: #266aa6;
+  color: #b8ccd9;
+}
+
+.rights-and-design {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10rem 5rem 5rem 5rem;
+  height: 25rem;
+  overflow: hidden;
+
+  & p {
+    width: 200px;
+  }
+}
+
+.last-title {
+  position: absolute;
+  left: 50%;
+  bottom: -12vh;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: clamp(8rem, 15vw, 20rem);
+  font-weight: 400;
+  background: linear-gradient(
+    rgba(129, 147, 173, 0.459),
+    rgba(63, 62, 62, 0.248)
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  white-space: nowrap;
+}
+
+@media (max-width: 950px) {
+  .head-section {
+    height: 100px;
+  }
+  .head-section .features-title {
+    font-size: 5.5rem;
+  }
+
+  .information {
+    width: 50%;
+    justify-content: center;
+  }
+
+  .information .features-title {
+    font-size: 1.6rem;
+  }
+
+  .information .feature-content {
+    font-size: 0.9rem;
+  }
+
+  .feature .go-to-btn {
+    padding: 1rem;
+
+    & .arrow {
+      font-size: 1rem;
+    }
+  }
+
+  .qr-code {
+    top: -15vh;
+    justify-content: center;
+    & h1 {
+      margin: 0;
+    }
+  }
+  .last-title {
+    bottom: -5vh;
+  }
+  .qr-code .fa-qrcode {
+    font-size: 6rem;
+    margin: 3px 0;
+  }
+
+  .qr-code .apps .store {
+    padding: 2px 6px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .head-section {
+    height: 50px;
+  }
+  .head-section .features-title {
+    font-size: 3rem;
+  }
+  .information {
+    width: 50%;
+    justify-content: center;
+  }
+  .information .features-title {
+    font-size: 1rem;
+    width: 30%;
+  }
+  .information .feature-content {
+    font-size: 0.5rem;
+  }
+  .rights-and-design {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    & p {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .qr-code {
+    top: -6vh;
+    justify-content: center;
+    & h1 {
+      margin: 0;
+    }
+  }
+  .last-title {
+    bottom: -5vh;
+  }
+  .qr-code .fa-qrcode {
+    font-size: 6rem;
+    margin: 3px 0;
+  }
+
+  .qr-code .apps .store {
+    padding: 2px 6px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .head-section {
+    height: 50px;
+  }
+  .head-section .features-title {
+    font-size: 2rem;
+  }
+  .information {
+    width: 50%;
+    justify-content: center;
+  }
+
+  .feature .go-to-btn {
+    padding: 0.5rem;
+
+    & .arrow {
+      font-size: 1rem;
+    }
+  }
+}
+ .fondo-globo {
     background-image: url(./pictures/globo-fondo-azul.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -380,7 +677,6 @@ footer {
     .hero-section {
       position: relative;
       background: url('./pictures/parrot2.png') center/cover no-repeat;
-      
       min-height: 800px;
       border-radius: 20px;
       padding: 3rem 2rem;
@@ -471,7 +767,6 @@ footer {
     .this-min-height{
       min-height: 750px;}
 
-
       .globe-card {
         width: 180px;
         height: 200px;
@@ -508,113 +803,73 @@ footer {
 
 
 
-  </style>
-</head>
+    .carousel-vertical .carousel-inner {
+      margin: 5%;
+      border-radius: 12px;
 
-<body>
+    }
 
+    .carousel-vertical .carousel-item {
+      transition: transform 0.8s ease-in-out;
+    }
 
-  <!-- Ceci-->
+    .carousel-vertical .carousel-item-next.carousel-item-start,
+    .carousel-vertical .carousel-item-prev.carousel-item-end {
+      transform: translateY(0);
+    }
 
+    .carousel-vertical .active.carousel-item-start,
+    .carousel-vertical .carousel-item-prev {
+      transform: translateY(-100%);
+    }
 
+    .carousel-vertical .active.carousel-item-end,
+    .carousel-vertical .carousel-item-next {
+      transform: translateY(100%);
+    }
 
+    .carousel-vertical .image-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-  <nav class="navbar navbar-expand-lg p-4 sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="./pictures/earth.png" alt="" width="25" class="me-2"> PAYROT
-      </a>
+    .carousel-vertical .image-box img {
+      max-width: 100%;
+      border-radius: 20px;
+      transition: transform 0.3s ease;
+    }
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample"
-        aria-controls="navbarsExample" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    .carousel-vertical .legend-box {
+      background: #f8f9fa;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 20px;
+      padding: 0 1.5rem;
+      height: auto;
+      min-height: 150px;
+    }
 
-      <div class="collapse navbar-collapse" id="navbarsExample">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#hero">Freelancer</a></li>
-          <li class="nav-item"><a class="nav-link" href="#lore">Business</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Marketplace</a></li>
-          <li class="nav-item"><a class="nav-link" href="#footer">Fees</a></li>
-        </ul>
-        <button class="btn btn-primary rounded-pill">Contact →</button>
-      </div>
-    </div>
-  </nav>
+    .carousel-vertical .row.g-0.h-100 {
+      height: 80%;
+    }
 
-  <!-- HERO -->
-  <section id="hero" class="hero-section">
+    .carousel-vertical .carousel-inner>.carousel-item {
+      height: 80%;
+    }
 
-       <div class="col-12 col-md-4 text-center this-min-height"></div>
+    .carousel-vertical .legend-box h3 {
+      font-weight: 300;
+      margin-bottom: 0.5rem;
+    }
 
-  <div style="margin-top: 100px;" class="container col-12">
-  <div class="row d-flex align-items-center justify-content-center w-100">
+    .carousel-vertical .legend-box p {
+      margin: 0;
+      color: #555555;
+      font-size: 1.1rem;
+    }
 
-    <!-- Globe Card -->
-    <div class="col-6 col-md-4 d-flex justify-content-center justify-content-md-start mb-4 mb-md-0">
-      <div class="globe-card">
-        <img src="./pictures/earth1.png" alt="Globe">
-       
-        <p class="mt-5 text-dark">
-          Send And Receive Money Worldwide<br>
-          <strong>Fast, Secure, Hassle-Free</strong>
-        </p>
-      </div>
-    </div>
-
-    <div class="d-none d-md-block col-md-4 text-center"></div>
-
-    <!-- Credit Card -->
-    <div class="col-6 col-md-4 d-flex justify-content-center justify-content-md-center mt-4 mt-md-0">
-      <img src="./pictures/sapphireFOC_CategoryHeader.png" class="img-fluid" alt="Card">
-     
-    </div>
-
-  </div>
-</div>
-
-
-
-    <!-- Bottom row fixed to bottom -->
-    <div class="container-fluid bottom-row">
-      <div class="row align-items-end text-center text-md-start">
-        <!-- Left -->
-        <div class="col-md-4 d-flex justify-content-md-start justify-content-center p-0">
-          <div style="background-color: white;" class="bottom-box bottom-left w-100">
-            <p class="mb-2 fs-4">🌐 💬</p>
-            <p>Payrot empowers users to send and receive payments globally.</p>
-            <a href="#" class="text-primary fw-semibold text-decoration-none">OUR SERVICES</a>
-          </div>
-        </div>
-
-        <!-- Center -->
-        <div class="col-md-4 text-center hero-text py-4">
-          <button class="btn btn-primary btn-rounded mb-3">Open Account →</button>
-          <h1>FAST SEND,<br>FAST RECEIVE</h1>
-        </div>
-
-        <!-- Right -->
-        <div class="col-md-4 d-flex justify-content-md-end justify-content-center p-0">
-          <div style="background-color: white;" class="bottom-box bottom-right w-100">
-            <p><small class="text-muted">TOTAL TRANSFERS</small></p>
-            <p class="stats mb-1">90M+</p>
-            <p class="text-muted mb-2">Payments Processed With Payrot</p>
-            <a href="#" class="text-primary fw-semibold text-decoration-none">VIEW STATS →</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Lorena-->
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+    .carousel-vertical .image-box img:hover {
+      transform: scale(1.03);
+    }
